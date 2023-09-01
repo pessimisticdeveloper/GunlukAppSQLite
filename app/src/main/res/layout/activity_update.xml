@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".UpdateActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editGunlukheader"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Günlüğü Düzenle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatesavebtn"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editGunlukheader"
+        android:layout_marginEnd="6dp"
+        app:tint="@color/yellow" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/updatetitleEdt"
+        android:hint="Yazı Başlığını Düzenle..."
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/editGunlukheader"
+        android:background="@drawable/yellow_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updatecontentEdt"
+        android:hint="Yazı İçeriğini Düzenle..."
+        android:gravity="top"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:background="@drawable/yellow_border"
+        android:layout_below="@+id/updatetitleEdt"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
